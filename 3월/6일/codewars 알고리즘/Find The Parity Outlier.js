@@ -40,4 +40,4 @@ function findOutlier(integers) {
 
   (evenIntegers.length > oddIntegers.length) ? answer = oddIntegers[0] : answer = evenIntegers[0]
   return answer;
-}
+} 

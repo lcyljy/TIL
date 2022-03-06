@@ -26,4 +26,4 @@ function divisors(integer) {
     answer = integer + " is prime"
   };
   return answer;
-};
+}; 

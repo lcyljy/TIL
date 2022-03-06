@@ -45,7 +45,7 @@ function solution(str) {
   return answer;
 }
 
-// 2차시도 결과
+// 2차시도 결과d
 // TypeError: Cannot read property 'length' of undefined
 //     at solution (test.js:11:30)
 //     at Context.<anonymous> (test.js:24:22)
