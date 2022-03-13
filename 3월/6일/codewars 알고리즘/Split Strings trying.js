@@ -52,3 +52,38 @@ function solution(str) {
 //     at processImmediate (internal/timers.js:464:21)
 
 // 
+
+// 3차시도 
+function solution(str) {
+  let answer = new Array();
+  let test = "_"
+  if (str.length % 2 == 1) {
+    str = str + test;
+  }
+  for (let i = 0; i < str.length; i += 2) {
+    answer.push(str.slice(i, i + 2));
+  }
+  //   if(answer[answer.length-1].length !== 2){
+  //   answer[answer.length-1] += test;
+  //     }
+  return answer;
+  ;
+}
+// str + test 값을 str에 넣어주지 않아서 값이 적용이 안된거였다.
+
+// 4차시도 (2차시도를 다시)
+function solution(str) {
+  let answer = new Array();
+  let test = "_"
+  //    if(str.length%2 == 1) {
+  //      str + test;
+  //    }
+  for (let i = 0; i < str.length; i += 2) {
+    answer.push(str.slice(i, i + 2));
+  }
+  if (answer[answer.length - 1].length !== 2) {
+    answer[answer.length - 1] += test;
+  }
+  // 먼저 값들을 나누어 answer에 집어넣은다음 마지막 배열의 값의 길이가 2가 아닌경우 "_"를 넣고자 했다.
+  return answer;
+}
