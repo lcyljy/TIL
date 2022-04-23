@@ -78,4 +78,19 @@ Webpack은 의존 관계에 있는 자바스크립트, css, 이미지 등의 리
 
 ## 요약
 
-모듈 -
+모듈
+
+- CommonJs방식, AMD방식, ES6 모듈 방식 3가지가 있다.
+- Node.js환경에서는 CommonJS방식을 주로쓰는편.
+- export/import 키워드
+- default 키워드를 사용시 var, let, const 키워드 사용 불가
+- default 키워드와 함께 export한 모듈은 {} 없이 임의의 이름으로 import한다.
+
+바벨(Babel)
+
+- 최신의 문법을 구 브라우저에서도 사용할 수 있게 변환해줌.(크로스 브라우징 이슈 해결)
+- 코드 자체를 변경시켜준다.
+
+웹펙(Webpack)
+
+- 모듈을 번들링함(여러개를 하나로 묶어준다)
